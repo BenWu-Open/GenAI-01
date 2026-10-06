@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ben Wu (吳笨) - Personal profile and academic research interests in AI for robotics, cybersecurity, and medical image analysis.">
+  <meta name="keywords" content="Ben Wu, 吳笨, Master in AI, Robotics, Cybersecurity, Medical Image Analysis, Deep Learning">
+  <meta name="theme-color" content="#0284c7">
+  
+  <title>Ben Wu (吳笨) | Student of Master in AI</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Site Header & Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#about" class="brand-link" aria-label="Ben Wu Home">
+        <span class="brand-badge">BW</span>
+        <div>
+          <span>Ben Wu (吳笨)</span>
+          <span class="brand-role">Student of Master in AI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#about" class="active">About</a>
+        <a href="#research">Research Interests</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Dark/Light Mode Switcher -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <!-- Sun Icon (for dark mode) -->
+          <svg class="icon-sun" style="display:none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (for light mode) -->
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <a href="#about">About</a>
+      <a href="#research">Research Interests</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         1. Hero / Profile Section
+         ====================================================================== -->
+    <section id="about" class="section hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Bio & Core Info -->
+          <div>
+            <h1 class="hero-name">Ben Wu <span style="font-weight: 600; font-size: 0.82em; color: var(--text-muted);">(吳笨)</span></h1>
+            <p class="hero-title">Student of Master in AI</p>
+
+            <p class="hero-bio">
+              I am currently a Master's student in Artificial Intelligence. My academic and technical 
+              passions center on advancing machine learning methodologies with real-world applications in 
+              <strong>AI for robotics</strong>, <strong>cybersecurity</strong>, and <strong>medical image analysis</strong>. 
+              I am driven by designing secure, intelligent, and deployable algorithms for complex computational challenges.
+            </p>
+
+            <!-- Contact -->
+            <div class="hero-contact">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary); flex-shrink: 0;">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Contact: <a href="mailto:freebenwu@gmail.com">freebenwu@gmail.com</a></span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="hero-actions">
+              <a href="#research" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Explore Research Interests
+              </a>
+            </div>
+
+
+          </div>
+
+          <!-- Profile Picture Card (avatar.jpg) -->
+          <div class="hero-avatar-card">
+            <div class="avatar-wrapper">
+              <img id="profile-avatar" class="avatar-img" src="assets/images/avatar.jpg" alt="Ben Wu (吳笨)" onerror="this.onerror=null; this.src='avatar.jpg';" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. Academic Research Interests Section
+         ====================================================================== -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Focus Areas</span>
+          <h2 class="section-title">Academic Research Interests</h2>
+          <p class="section-subtitle">
+            Exploring modern artificial intelligence methodologies across autonomous robotic systems, information security, and biomedical image analysis.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Topics</button>
+          <button class="filter-btn" data-filter="robotics">AI for Robotics</button>
+          <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+          <button class="filter-btn" data-filter="medical">Medical Image Analysis</button>
+        </div>
+
+        <!-- Research Cards Grid -->
+        <div class="research-grid">
+          
+          <!-- 1. AI for Robotics -->
+          <article class="research-card" data-category="robotics">
+            <div class="research-card-header">
+              <div class="research-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                  <circle cx="12" cy="5" r="2"></circle>
+                  <path d="M12 7v4"></path>
+                  <line x1="8" y1="16" x2="8" y2="16"></line>
+                  <line x1="16" y1="16" x2="16" y2="16"></line>
+                </svg>
+              </div>
+              <span class="research-badge">Robotics</span>
+            </div>
+            <h3 class="research-card-title">AI for Robotics</h3>
+            <p class="research-card-body">
+              Investigating deep reinforcement learning, visual SLAM, and spatial perception for embodied autonomous agents. Focus areas include sim-to-real transfer, multi-modal sensor fusion, and adaptive motion planning in complex dynamic environments.
+            </p>
+            <div class="research-tags">
+              <span class="research-tag">Reinforcement Learning</span>
+              <span class="research-tag">Visual SLAM</span>
+              <span class="research-tag">ROS 2</span>
+              <span class="research-tag">Sim-to-Real</span>
+            </div>
+            <div class="research-meta">
+              <span>Autonomous Systems</span>
+              <a href="#" class="research-expand-trigger" data-research-id="res-robotics">Learn More &rarr;</a>
+            </div>
+          </article>
+
+          <!-- 2. Cybersecurity -->
+          <article class="research-card" data-category="cybersecurity">
+            <div class="research-card-header">
+              <div class="research-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <span class="research-badge">Security</span>
+            </div>
+            <h3 class="research-card-title">Cybersecurity</h3>
+            <p class="research-card-body">
+              Applying machine learning to modern cyber defense, including automated intrusion detection, network traffic anomaly identification, and defending deep neural networks against adversarial attacks and model evasion.
+            </p>
+            <div class="research-tags">
+              <span class="research-tag">Adversarial ML</span>
+              <span class="research-tag">Intrusion Detection</span>
+              <span class="research-tag">Threat Analysis</span>
+              <span class="research-tag">Robustness</span>
+            </div>
+            <div class="research-meta">
+              <span>Information Security</span>
+              <a href="#" class="research-expand-trigger" data-research-id="res-cybersecurity">Learn More &rarr;</a>
+            </div>
+          </article>
+
+          <!-- 3. Medical Image Analysis -->
+          <article class="research-card" data-category="medical">
+            <div class="research-card-header">
+              <div class="research-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <span class="research-badge">Biomedical AI</span>
+            </div>
+            <h3 class="research-card-title">Medical Image Analysis</h3>
+            <p class="research-card-body">
+              Developing state-of-the-art computer vision algorithms for anatomical segmentation, pathological lesion classification, and radiological analysis across MRI, CT, and X-ray modalities to support clinical diagnostic workflows.
+            </p>
+            <div class="research-tags">
+              <span class="research-tag">Computer Vision</span>
+              <span class="research-tag">3D Segmentation</span>
+              <span class="research-tag">MONAI</span>
+              <span class="research-tag">Diagnostics</span>
+            </div>
+            <div class="research-meta">
+              <span>Healthcare AI</span>
+              <a href="#" class="research-expand-trigger" data-research-id="res-medical">Learn More &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Research In-Depth Modal
+       ======================================================================== -->
+  <div id="research-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div style="font-size:0.8rem; font-weight:700; color:var(--primary); text-transform:uppercase; margin-bottom:0.4rem;" id="modal-category">
+        Category
+      </div>
+      <h3 id="modal-title" style="font-size:1.5rem; font-weight:800; color:var(--text-main); line-height:1.3; margin-bottom:1.25rem;">
+        Project Title
+      </h3>
+
+      <div id="modal-body" style="font-size:0.95rem; color:var(--text-muted); line-height:1.65; margin-bottom:1.5rem;">
+        Detailed project description and methodology...
+      </div>
+
+      <div id="modal-tags" class="research-tags" style="margin-bottom:0;">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Site Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p>&copy; <span id="year">2026</span> Ben Wu (吳笨). All rights reserved.</p>
+        <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.35rem;">
+          Contact: <a href="mailto:freebenwu@gmail.com" style="color: var(--primary); text-decoration: underline;">freebenwu@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#research">Research Interests</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Update copyright year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
